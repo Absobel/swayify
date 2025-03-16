@@ -6,7 +6,7 @@ set(CMAKE_C_STANDARD 23)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 
 if(CMAKE_C_COMPILER_ID MATCHES "GNU|Clang")
-add_compile_options(-Wall -Wextra -Wpedantic)
+add_compile_options(-Wall -Wextra -Wpedantic -Wno-unused-parameter)
 endif()
 
 file(MAKE_DIRECTORY ${CMAKE_SOURCE_DIR}/build)
